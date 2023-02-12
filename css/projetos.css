@@ -53,7 +53,7 @@
 }
 @media (max-width: 700px) {
   #projetos h2 {
-    margin-top: 16px;
+    margin-top: 20px;
     font: var(--font-2-s-sb);
     max-width: 16ch;
     margin-bottom: 12px;
