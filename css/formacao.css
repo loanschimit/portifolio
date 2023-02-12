@@ -1,0 +1,121 @@
+#formacao .cursos-h1 {
+  background: var(--c5);
+  color: var(--b2);
+}
+.cursos-h1 h1 {
+  max-width: 7ch;
+  padding: 28px 0;
+  margin-left: 160px;
+}
+.curso-item {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  margin: 60px 20px 0 20px;
+  padding-top: 4px;
+  gap: 32px;
+  margin-left: 32px;
+}
+.curso-item li {
+  display: grid;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+.curso-item li:hover {
+  margin-top: -4px;
+}
+
+.curso-item h2 {
+  margin-top: 20px;
+  text-align: center;
+  justify-self: center;
+  font: var(--font-2-m-sb);
+  max-width: 24ch;
+  transition: 0.3s;
+  margin-bottom: 12px;
+}
+.curso-item li:hover h2 {
+  margin-top: 24px;
+}
+.curso-item .circulo-content {
+  align-self: center;
+  justify-self: center;
+  align-content: center;
+  display: grid;
+  /* padding: 180px; */
+  height: 320px;
+  width: 320px;
+  background: var(--c5);
+
+  box-shadow: 0px 24px 8px rgba(0, 0, 0, 0.25);
+
+  border-radius: 50%;
+}
+
+#horas {
+  text-align: center;
+  position: relative;
+  color: var(--c4);
+  font: 500 1.8rem/1 "Concert One", serif;
+}
+.roda-roda {
+  transition: 0.3s;
+}
+.roda-roda:hover {
+  animation: rotacao infinite 3s;
+  /* infinite 0.7s */
+}
+
+.roda-roda:hover .circulo-content {
+  animation: sem-rotacao infinite 3s;
+}
+.roda-roda:hover p::after {
+  top: -2px;
+}
+.roda-roda:hover p {
+  top: -1px;
+}
+.roda-roda:hover #horas {
+  margin-top: -1px;
+}
+
+@keyframes rotacao {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes sem-rotacao {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(-1turn);
+  }
+}
+@media (max-width: 1165px) {
+  .cursos-h1 h1 {
+    max-width: 7ch;
+    padding: 28px 0;
+    margin-left: 53px;
+  }
+}
+@media (max-width: 985px) {
+  .cursos-h1 h1 {
+    max-width: max-content;
+  }
+}
+@media (max-width: 700px) {
+  .curso-item h2 {
+    margin-top: 20px;
+    font: var(--font-2-s-sb);
+    max-width: 16ch;
+    margin-bottom: 12px;
+  }
+  .cursos-h1 h1 {
+    max-width: max-content;
+    padding: 12px 0;
+  }
+}

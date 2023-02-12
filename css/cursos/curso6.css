@@ -1,0 +1,44 @@
+.curso-item .circulo-6 {
+  display: grid;
+  /* padding: 180px; */
+  height: 360px;
+  width: 360px;
+  background: linear-gradient(90deg, #8e05f3 0%, #440099 100%);
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25); */
+
+  border-radius: 50%;
+}
+
+.circulo-6 .circulo-content p {
+  position: relative;
+  margin-top: 28px;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  /* Bungee Spice */
+  background: 
+  #49079b;
+ 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font: 500 2.5rem/1 "Concert One", serif;
+  /* font: 500 2.5rem/1 "Bungee Spice", serif; */
+}
+.circulo-6 .circulo-content p::after {
+  content: "DESIGN";
+  background: -webkit-linear-gradient(#b806e9, #6b01ce);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  position: absolute;
+  top: -2px;
+  left: -2px;
+}
+.circulo-6 #horas::before {
+ 
+  content: "34h";
+  color: var(--c6);
+  position: absolute;
+  margin-top: -1;
+  margin-left: -2px;
+}

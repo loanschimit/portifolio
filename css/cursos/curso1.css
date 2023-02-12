@@ -1,0 +1,47 @@
+.curso-item .circulo-1 {
+  display: grid;
+  /* padding: 180px; */
+  height: 360px;
+  width: 360px;
+  background: linear-gradient(90deg, #ff5201 0%, #44a4df 100%);
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25); */
+  border-radius: 50%;
+}
+
+.circulo-1 .circulo-content p {
+  position: relative;
+  margin-top: 28px;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  /* Bungee Spice */
+  /* color: #9d0b01; */
+  font: 500 2.5rem/1 "Concert One", serif;
+  /* font: 500 2.5rem/1 "Bungee Spice", serif; */
+  background: #9d0b01;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font: 500 2.5rem/1 "Concert One", serif;
+  /* font: 500 2.5rem/1 "Bungee Spice", serif; */
+}
+
+.circulo-1 .circulo-content p::after {
+  content: "HTML & CSS";
+  /* color: #ff8800; */
+  background: -webkit-linear-gradient(#ff8800, #dd7702);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+}
+
+.circulo-1 #horas::before {
+  content: "46h";
+  color: var(--c6);
+  position: absolute;
+  margin-top: -1;
+  margin-left: -2px;
+}
+

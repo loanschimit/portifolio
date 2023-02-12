@@ -1,0 +1,129 @@
+.main-bg {
+  background-color: var(--b1);
+  z-index: 1;
+}
+
+.main {
+  padding-top: 120px;
+  padding-bottom: 48px;
+  display: grid;
+  grid-template-columns: 160px 1fr 1fr;
+  z-index: 2;
+}
+.main .redes-sociais {
+  margin-left: 53px;
+  margin-right: 53px;
+  width: 80px;
+  display: grid;
+  justify-content: center;
+  border-right: 1px solid var(--borda);
+
+  /* linear-gradient(
+      180deg,
+      #eac3a8 0%,
+      #edd9cb 18.23%,
+      #efd3be 95.31%,
+      #e9c1a5 100%
+    ); */
+}
+.main .redes-sociais a {
+  transition: 0.3s;
+}
+.main .redes-sociais a:hover {
+  transform: scale(1.06);
+}
+.main h1 {
+  max-width: 11ch;
+  margin-bottom: 8px;
+}
+.main-content p {
+  font: var(--font-2-m);
+  color: var(--c4);
+  max-width: 30ch;
+  margin-bottom: 16px;
+}
+.main-content {
+  height: 400px;
+}
+.main-content a {
+  font: var(--font-button);
+  letter-spacing: 0.04cm;
+
+  padding: 10px 24px;
+  background: linear-gradient(180deg, #371903 0%, #290e00 100%);
+  box-shadow: 0px 4px 4px rgba(42, 14, 1, 0.15);
+  border-radius: 30px;
+  color: var(--b2);
+}
+.main-content .botao {
+  max-width: max-content;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.main-content .botao:hover {
+  transform: scale(1.05);
+}
+.main {
+  position: relative;
+}
+.main .color-span {
+  color: var(--c0);
+}
+.main .perfil {
+  margin-left: 40px;
+  position: absolute;
+  bottom: -80px;
+  box-shadow: 0 0 0 20px var(--b1);
+  border-radius: 300px;
+}
+@media (max-width: 1165px) {
+  .main-content {
+    height: max-content;
+  }
+
+  .main {
+    margin-left: 53px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .main .redes-sociais {
+    display: none;
+  }
+}
+@media (max-width: 985px) {
+  .main {
+    margin: 0;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+  .main .perfil {
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: inherit;
+  }
+  .main h1 {
+    margin: 0 auto;
+  }
+  .main-content .botao {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 800px) {
+  .main .perfil {
+    width: 260px;
+    height: auto;
+  }
+  .main {
+    padding-top: 40px;
+    padding-bottom: 12px;
+  }
+}
+@media (max-width: 700px) {
+  .main p {
+    font: var(--font-2-s-r);
+  }
+  .botao {
+    font: var(--font-s-button);
+  }
+}
